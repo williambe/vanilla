@@ -75,6 +75,9 @@
         a specific settings ... oooh the brain dont remembers
         {{ node.createdtime|date("d.m.Y H:m") }}
         {{ node.changedtime|date("d.m.Y") }}
+        print a specific format from admin/config/regional/date-time,
+        it is needed for localized dates:
+        {{ node.createdtime|format_date('format_machine_name') }}
       #}
       {# look at the field--field-tags.html.twig #}
       {{ content.field_tags }}
